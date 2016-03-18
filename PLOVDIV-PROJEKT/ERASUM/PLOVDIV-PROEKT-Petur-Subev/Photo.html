@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Галерия</title>
+	<link href='https://fonts.googleapis.com/css?family=Lobster&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Arvo:700italic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/style.css">
+	<link href='https://fonts.googleapis.com/css?family=Luckiest+Guy' rel='stylesheet' type='text/css'>
+	<link rel="shortcut icon" href="img/p.png">
+	<script ></script>
+</head>
+<body>	
+		<header>
+		<div class="wrapper">
+			<nav class="Home">
+				<ul>
+					<li class="nav-li"><a href="index.html">Начало</a></li>
+					
+					<li class="nav-li"><a href="#">Относно</a>
+						<ul>
+							<li><a href="Me.html">За мен</a></li>
+							<li><a href="Site.html">За сайта</a></li>
+						</ul>
+					</li>
+					
+					<li class="nav-li"><a href="#">Галерия</a>
+						<ul>
+							<li><a href="photo.html">Снимки</a></li>
+							<li><a href="video.html">Видео</a></li>
+						</ul>
+					</li>
+
+					<li class="nav-li"><a href="#">Новини</a>
+						<ul>
+							<li><a href="#">Новини</a>
+								<ul>
+									<li><a href="http://www.plovdiv24.bg/" target="_blank">Пловдив24</a></li>
+									<li><a href="http://dariknews.bg/category.php?category_id=19" target="_blank">Дарик-Пловдив</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Спорт</a>
+								<ul>
+									<li><a href="http://plovdivnews.bg/sport" target="_blank">Пловдив Нювз</a></li>
+									<li><a href="http://plovdivderby.com/" target="_blank">Пловдив дерби</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Времето</a>
+								<ul>
+									<li><a href="http://sinoptik.bg/plovdiv-bulgaria-100728193" target="_blank">Синоптик</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li class="nav-li"><a href="#">Уикипедия</a>
+						<ul>
+							<li><a href="https://bg.wikipedia.org/wiki/%D0%9F%D0%BB%D0%BE%D0%B2%D0%B4%D0%B8%D0%B2" target="_blank">Пловдив-bg</a></li>
+							<li><a href="https://en.wikipedia.org/wiki/Plovdiv" target="_blank">Plovdiv-en</a></li>
+							<li><a href="https://de.wikipedia.org/wiki/Plowdiw" target="_blank">Plowdiw-de</a></li>
+						</ul>
+					</li>
+				</ul>	
+			</nav>
+		</div>
+		<div class="language">
+			<a href="#"><img src="img/bg.png" class="language-icon"></a>
+			<a href="Photo-en.html"><img src="img/en.png" class="language-icon"></a>
+		</div>
+		</header>
+		
+
+<section>		
+	<div class="wrapper">
+	<script language="javascript" type="text/javascript">
+
+	var imageData= new Array(10)
+	createTwoDimensionalArray(3);
+
+	imageData[0][0]="img/1.jpg";
+	imageData[1][0]="img/2.jpg";
+	imageData[2][0]="img/3.jpg";
+	imageData[3][0]="img/4.jpg";
+	imageData[4][0]="img/5.jpg";
+	imageData[5][0]="img/6.jpg";
+	imageData[6][0]="img/7.jpg";
+	imageData[7][0]="img/8.jpg";
+	imageData[8][0]="img/9.jpg";
+	imageData[9][0]="img/10.jpg";
+
+	// Opisanie na snimkata
+	imageData[0][1]="Античният театър";
+	imageData[1][1]="Градската градина";
+	imageData[2][1]="Тепетата";
+	imageData[3][1]="Парк Отдих и Култура";
+	imageData[4][1]="Градски транспорт-Велоалеи";
+	imageData[5][1]="Римски Аквадукт";
+	imageData[6][1]="Слънчев Пловдив";
+	imageData[7][1]="Пловдив";
+	imageData[8][1]="Пеещите фонтани";
+	imageData[9][1]="Буря над Пловдив";
+	
+	// indeks
+	var imageIndexFirst = 0;
+	var imageIndexLast = 3;
+	var continueScroll = 0;
+	var maxIndex = 9;
+	var minIndex = 0;
+
+	// Two dimensions
+	function createTwoDimensionalArray(arraySize) {
+	for (i = 0; i < imageData.length; ++ i)
+	imageData[i] = new Array(arraySize);
+	}
+
+	// This function preloads the thumbnail images
+	function preloadThumbnails() {
+	imageObject = new Image();
+	for (i = 0; i < imageData.length; ++ i)
+	imageObject.src = imageData[i][0];
+	}
+
+	// Smenq teksta 
+	function changeCellText(cellId,myCellData){
+	document.getElementById(cellId).innerHTML = myCellData;
+	}
+
+	// Smenq snimkite
+	function changeImage(ImageToChange,MyimageData){
+	document.getElementById(ImageToChange).setAttribute('src',MyimageData)
+	}
+
+	// smenq alt na snimkite 
+	function changeImageAlt(ImageToChange,imageData){
+	document.getElementById(ImageToChange).setAttribute('alt',imageData)
+	}
+
+	// Smenq zaglavieto na snimkata
+	function changeImageTitle(ImageToChange,imageData){
+	document.getElementById(ImageToChange).setAttribute('title',imageData)
+	}
+
+	// This function changes the image onmouseover
+	function changeImageOnMouseOver(ImageToChange,imageIndex){
+	document.getElementById(ImageToChange).setAttribute('onmouseover','handleThumbOnMouseOver(' + imageIndex + ');')
+	}
+
+	// smenq malkata snimka 
+	function handleThumbOnMouseOver(imageIndex){
+	changeImage('imageLarge',imageData[imageIndex][0]);
+	changeCellText('imageTitleCell',imageData[imageIndex][1]);
+	changeCellText('imageDescriptionCell',imageData[imageIndex][2]);
+	changeImageAlt('imageLarge',imageData[imageIndex][1] + ' - ' + imageData[imageIndex][2]);
+	changeImageTitle('imageLarge',imageData[imageIndex][1] + ' - ' + imageData[imageIndex][2]);
+	}
+
+	// Za scroll v dvete posoki 
+	function scrollImages(scrollDirection) {
+	var currentIndex;
+	if (scrollDirection == 'up')
+	{
+	if (imageIndexLast != maxIndex)
+	{
+	document.getElementById('scrollPreviousCell').setAttribute('style','color: Black')
+	document.getElementById('scrollNextCell').setAttribute('style','color: Black')
+	imageIndexLast = imageIndexLast + 1;
+	imageIndexFirst = imageIndexFirst + 1;
+	if (imageIndexLast == maxIndex)
+	{
+	document.getElementById('scrollNextCell').setAttribute('style','color: Silver')
+	}
+
+	// Smenq snimkite v skrola za da se postigne neshto kato efekt
+	currentIndex = imageIndexLast;
+	changeImage('scrollThumb4',imageData[currentIndex][0]);
+	changeImageOnMouseOver('scrollThumb4',currentIndex);
+	currentIndex = imageIndexLast - 1;
+	setTimeout("changeImage('scrollThumb3',imageData[" + currentIndex + "][0])",25);
+	setTimeout("changeImageOnMouseOver('scrollThumb3'," + currentIndex + ")",25);
+	currentIndex = imageIndexLast - 2;
+	setTimeout("changeImage('scrollThumb2',imageData[" + currentIndex + "][0])",50);
+	setTimeout("changeImageOnMouseOver('scrollThumb2'," + currentIndex + ")",50);
+	currentIndex = imageIndexLast - 3;
+	setTimeout("changeImage('scrollThumb1',imageData[" + currentIndex + "][0])",75);
+	setTimeout("changeImageOnMouseOver('scrollThumb1'," + currentIndex + ")",75);
+	setTimeout("scrollAgain('" + scrollDirection + "')",1000);
+	}
+	}
+	else
+	{
+	if (imageIndexFirst != minIndex)
+	{
+	document.getElementById('scrollPreviousCell').setAttribute('style','color: Black')
+	document.getElementById('scrollNextCell').setAttribute('style','color: Black')
+	imageIndexLast = imageIndexLast - 1;
+	imageIndexFirst = imageIndexFirst - 1;
+	//  Cvqt ako e v kraq 
+	if (imageIndexFirst == minIndex)
+	{
+	document.getElementById('scrollPreviousCell').setAttribute('style','color: Silver')
+	}
+	
+	// Smqna na snimkite v skrola za da se poluchi neshto kato efekt
+
+	currentIndex = imageIndexFirst;
+	changeImage('scrollThumb1',imageData[currentIndex][0]);
+	changeImageOnMouseOver('scrollThumb1',currentIndex);
+	currentIndex = imageIndexFirst + 1;
+	setTimeout("changeImage('scrollThumb2',imageData[" + currentIndex + "][0])",25);
+	setTimeout("changeImageOnMouseOver('scrollThumb2'," + currentIndex + ")",25);
+	currentIndex = imageIndexFirst + 2;
+	setTimeout("changeImage('scrollThumb3',imageData[" + currentIndex + "][0])",50);
+	setTimeout("changeImageOnMouseOver('scrollThumb3'," + currentIndex + ")",50);
+	currentIndex = imageIndexFirst + 3;
+	setTimeout("changeImage('scrollThumb4',imageData[" + currentIndex + "][0])",75);
+	setTimeout("changeImageOnMouseOver('scrollThumb4'," + currentIndex + ")",75);
+
+	setTimeout("scrollAgain('" + scrollDirection + "')",1000);
+	}
+	}
+	}
+	
+	// Funkciq koqto proverqva dali da skrolva 
+	function scrollAgain(scrollDirection)
+	{
+	if (continueScroll == 1)
+	{
+	scrollImages(scrollDirection);
+	}
+	}
+
+	// skrolvane na lqvo 
+	function scrollPrevious() {
+	continueScroll = 1;
+	scrollImages('down');
+	}
+
+	// Skrolvane na dqsno
+	function scrollNext() {
+	continueScroll = 1;
+	scrollImages('up');
+	}
+
+	// spira skrolinga
+	function scrollStop() {
+	continueScroll = 0;
+	}
+	</script>
+	<div class="wrapper">
+	<table cellpadding="5" cellspacing="0" class="photo-table">
+	<tr>
+		<td align="center" colspan="6" id="imageTitleCell">
+		</td>
+	</tr>
+	<tr>
+		<td align="center" colspan="6" style="background-color: #191818">
+			<img src="img/Why.jpg" class="td" id="imageLarge" alt="default" />
+		</td>
+	</tr>
+	<tr>
+		<td id="scrollPreviousCell" style="color: Silver" onmouseover="scrollPrevious();" onmouseout="scrollStop();">Предишен
+		</td>
+		<td>
+			<img id="scrollThumb1" src="img/1.jpg" class="thumbs" onmouseover="handleThumbOnMouseOver(0);" />
+		</td>
+		<td>
+			<img id="scrollThumb2" src="img/2.jpg" class="thumbs" onmouseover="handleThumbOnMouseOver(1);" />
+		</td>
+		<td>
+			<img id="scrollThumb3" src="img/3.jpg" class="thumbs" onmouseover="handleThumbOnMouseOver(2);" />
+		</td>
+		<td>
+			<img id="scrollThumb4" src="img/4.jpg" class="thumbs" onmouseover="handleThumbOnMouseOver(3);" />
+		</td>
+		<td id="scrollNextCell" style="color: Black" onmouseover="scrollNext();" onmouseout="scrollStop();">
+		Следващ</td>
+	</tr>
+	</table>
+</div>
+</div>
+</section>
+<footer class="site-footer">
+		<div class="wrapper">
+			<div>
+				<h1 class=ploveediv>P<span class="pinki">LOVE</span>DIV</h1>
+				<img src="img/flag.png" class="footer-img" alt="Flag">
+			</div>
+			<div>
+				|<a href="index.html">Начало</a>|
+				<a href="Me.html" target="_blank">За мен</a>|
+				<a href="Site.html" target="_blank">За сайта</a>|
+				<a href="#" target="_blank">Снимки</a>|
+				<a href="video.html" target="_blank">Видео</a>|
+			</div>
+        </div>
+	</footer>
+
+</body>
+</html>

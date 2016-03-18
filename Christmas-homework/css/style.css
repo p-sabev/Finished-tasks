@@ -1,0 +1,482 @@
+@charset "UTF-8";
+*{
+	margin: 0;
+	padding: 0;	
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+}
+.wrapper {
+	width:800px; 
+	margin: 0 auto;
+}
+.header {
+	background-color: #f66262;
+	height:70px;
+	position: fixed;
+	width: 100%;
+	z-index: 999;
+}
+.welcome {
+	background-color: #eb504e;
+}
+.smart {
+	background-color: #232323;
+}
+.talented {
+	background-color: #6cc372;
+}
+.elegant {
+	background-color: #f0f0f0;
+}
+.prices {
+	background-color: #ffffff;
+}
+.latest {
+	background-color: #ea4f4d;
+}
+.fot {
+	background-color: #232325;
+	z-index: 100;
+}
+.el {
+	float: left;
+}
+.el2 {
+	color: white;
+}
+.bigel {
+	position: relative;
+	width: 20%;
+}
+.header h4 {
+	text-align: center;
+}
+.nel {
+	position: relative;
+	width: 10%;
+	float: left;
+	top: 25px;
+	left: 0px;
+	right: 0px;
+}
+.nel h4 {
+	color: white;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.motion {
+	font-size: 36px;
+	text-align: right;
+	color: #ffffff;
+}
+.Layer_1 {
+  background-image: url("img/1.png");
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  width: 47px;
+  height: 36px;
+  z-index: 2;
+  padding-right: 8px;
+}
+a:link, a:visited, a:hover, a:active  {
+    color: white;
+    text-decoration: none;
+}
+.picbs {
+	width: 800px;
+	padding-bottom: 10px;	
+}
+.wtm {
+	padding-top: 90px;
+	font-size: 55px;
+	text-align: center;
+	color: white;
+	font-family: 'Dosis', sans-serif;
+    font-weight: 200;
+}
+.asmart {
+	text-align: center;
+	color: white;
+	font-family: 'Dosis', sans-serif;
+    font-weight: 200;
+}
+.snc {
+	color: white;
+	text-align: center;
+	font-size: 55px;
+	padding-top: 70px;
+	font-family: 'Dosis', sans-serif;
+    font-weight: 200;
+}
+.wrap {
+	position: relative;
+	float: left;
+	width: 33.3%;
+	padding-bottom: 30px;
+}
+.imgpng {
+	width: 45%;
+	position: relative;
+	left: 77px;
+	padding: 30px 0px 10px 0px;
+}
+.multi {
+	color: white;
+	text-align: center;
+	font-size: 35px;
+	font-family: 'Dosis', sans-serif;
+    font-weight: 200;
+}
+.wrap2 {
+	width: 100%;
+}
+.multitext {
+	color: #eb504e;
+	text-align: center;
+	font-size: 19px;
+	padding-top: 5px;
+	font-family: 'Dosis', sans-serif;
+    font-weight: 200;
+}
+.team {
+	color: black;
+	text-align: center;
+	font-size: 19px;
+	padding-top: 5px;
+	font-family: 'Dosis', sans-serif;
+    font-weight: 200;
+}
+.four {
+	background-color: white;
+	width: 23.5%;
+	float: left; 
+	border-radius: 5px;
+	margin-right: 2%;
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+.clearfix:before, .clearfix:after {
+    content: '';
+    display: block;
+}
+.clearfix:after {
+    content: '';
+    clear: both;
+}
+.clearfour {
+	margin-right: 0;
+}
+.me {
+	height: 142px;
+    width: 140px;
+    border-radius: 50%;
+    border: solid #6cc372 6px;
+    left: 23px;
+    top: 25px;
+    position: relative;
+}
+.name {
+	color: #6cc372;
+    text-align: center;
+    font-size: 21px;
+    padding-top: 33px;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 600;
+}
+.name2 {
+	color: #eb504e;
+    text-align: center;
+    font-size: 19px;
+    padding-top: 4px;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 600;
+}
+.twitterbutton {
+    background-color: #6cc372;
+    width: 90%;
+    margin: 5%;
+    height: 35px;
+    color: white;
+    font-size: 24px;
+    border-radius: 5px;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 200;
+}
+.twitter {
+	height: 25px;
+	padding-right: 10px;
+	padding-left: 8px;
+}
+.genuine {
+	color: black;
+	text-align: center;
+	font-size: 55px;
+	padding-top: 70px;
+	font-family: 'Dosis', sans-serif;
+    font-weight: 200;
+}
+.looks {
+	color: green;
+	text-align: center;
+	font-size: 19px;
+	padding-top: 5px;
+	font-family: 'Dosis', sans-serif;
+    font-weight: 200;
+    padding: 5px 0px 15px 0px;
+}
+.item {
+	box-sizing: border-box;
+    width: 25%;
+    float: left;
+    text-align: center;
+    font-size: 19px;
+    padding-top: 4px;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 600;
+}
+.galim {
+    padding: 12px;
+    width: 100%;
+    height: 150px;
+}
+.pb {
+    padding-bottom: 30px;
+}
+.clearitem {
+    padding-right: 0;
+}
+.pricess {
+	box-sizing: border-box;
+    float: left;
+    width: 32%;
+    border-radius: 5%;
+    padding: 10px;
+    text-align: center;
+    background-color: #ffffff;
+}
+.marginl {
+	margin-left: 2%;
+	margin-right: 2%;
+	margin-bottom: 0;
+}
+.colg {
+	color: grey;
+}
+.colr {
+	color: red;
+}
+.pricess h3 {
+	font-size: 35px;
+	font-family: 'Dosis', sans-serif;
+    font-weight: 400;
+	text-align: center;
+}
+.pricess h4 {
+	font-size: 18px;
+	font-family: 'Dosis', sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+.bin {
+	margin-top: 24px;
+}
+.priceg {
+	box-sizing: border-box;
+    float: left;
+    width: 32%;
+    border-radius: 5%;
+    padding: 10px;
+    text-align: center;
+    background-color: #f0f0f0;
+    margin-bottom: 1px;
+}
+.hm {
+	font-size: 18px;
+	font-family: 'Dosis', sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+.onefive {
+	background-color: #232323;
+}
+.twofive {
+	background-color: #ea4f4d;
+}
+
+.dolars {
+	font-family: 'Dosis', sans-serif;
+    font-weight: 500;
+    text-align: left;
+    font-size: 25px;
+    color: #ffffff;
+}
+.bigp {
+	font-size: 40px;
+}
+.order {
+	background-color: #ffffff;
+    text-align: right;
+    top: -4px;
+    left: 57px;
+    position: relative;
+    border-radius: 14%;
+    padding: 6px;
+    color: #232323;
+}
+.order2 {
+	background-color: #ffffff;
+    text-align: right;
+    top: -4px;
+    left: 57px;
+    position: relative;
+    border-radius: 14%;
+    padding: 6px;
+    color: #ea4f4d;
+}
+.more {
+	text-align: center;
+	color: #ea4f4d;
+	padding-top: 270px;
+    padding-bottom: 20px;
+}
+.tweets {
+	font-family: 'Dosis', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    font-size: 50px;
+    padding-top: 70px;
+    color: #ffffff;
+}
+.touch {
+	font-family: 'Dosis', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    font-size: 20px;
+    color: #232325
+}
+.twitterp {
+	width: 35px;
+	position: relative;
+	display: block;
+	margin: 0 auto;
+}
+.divt {
+	padding-top: 30px;
+}
+.Abraham {
+	font-family: 'Dosis', sans-serif;
+    font-weight: 400;
+    text-align: left;
+    font-size: 20px;
+    color: #232325;
+    padding-bottom: 20px;
+}
+.colorb {
+	font-family: 'Dosis', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    font-size: 18.5px;
+    padding-top: 70px;
+    color: #ffffff;
+}
+.moti {
+	color: #ea4f4d;
+}
+.Begha {
+	font-family: 'Dosis', sans-serif;
+    font-weight: 500;
+    text-align: left;
+    font-size: 16.5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #ffffff;
+}
+.minwrap {
+	width: 85%;
+	float: left;
+}
+.logoo {
+	background-color: #ea4f4d;
+    float: left;
+    width: 3%;
+    position: relative;
+    top: 6.5px;
+    margin-left: 9px;
+}
+.imglog {
+	width: 21px;
+	height: 23px;
+	text-align: right;
+}
+.mini-wrapper2 {
+	width: 100%;
+    position: relative;
+    background-color: #232325;
+    height: 40px;
+    z-index: -1;
+} 
+.map {
+	width: 100%;
+	height: 250px;
+	border: 0;
+	z-index: -5;
+}
+.locatio {
+	background-color: #232325;
+    width: 45%;
+    height: 140px;
+    margin-top: 50px;
+    z-index: 1000;
+    position: relative;
+    top: -211px;
+    opacity: 0.9;
+    margin: 0 auto;
+}
+.conus {
+	color: white;
+	text-align: center;
+	font-size: 35px;
+	padding-top: 5px;
+	font-family: 'Dosis', sans-serif;
+    font-weight: 200;
+} 
+.roof {
+	font-size: 16px;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 600;
+    padding: 10px;
+    text-align: center;
+    color: #ea4f4d;
+}
+.locatio2 {
+    z-index: 1000;
+    position: relative;
+    top: -211px;
+    opacity: 0.9;
+    margin: 0 auto;
+    width: 0;
+    height: 24px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #232325;
+}
+#owl-demo .item{
+  margin: 3px;
+}
+#owl-demo .item img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.gear {
+    width: 25px;
+}
+.divgear {
+     position: relative;
+    width: 0%;
+    top: -332px;
+    left: 383px;
+}
