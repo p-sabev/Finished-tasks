@@ -1,0 +1,174 @@
+@charset 'UTF-8';
+* {
+	margin: 0;
+	padding: 0;
+}
+body
+{
+    background-color: #8db500;
+}
+.clearfix
+{
+    *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after
+{
+    line-height: 0;
+
+    display: table;
+
+    content: '';
+}
+.clearfix:after
+{
+    clear: both;
+}
+.wrapper
+{
+    position: fixed;
+    top: 25%;
+    right: 0;
+    left: 0;
+
+    width: 80%;
+    margin: 0 auto;
+
+    text-align: center;
+}
+.box
+{
+    float: left;
+
+    width: 25%;
+}
+.box2
+{
+    float: left;
+
+    width: 25%;
+    margin-bottom: 5px;
+}
+.result-heading
+{
+    font-size: 25px;
+    font-weight: bold;
+
+	margin-bottom: 10px;
+    margin-left: 7.5px;
+
+    text-align: left;
+
+    color: #2c2233;
+}
+.holds-input
+{
+    margin: 60px 0 100px 0;
+}
+.money
+{
+    font-size: 3.5vw;
+    font-weight: bold;
+
+    padding: 0 0 0 2%;
+
+    color: #00856a;
+}
+.input
+{
+    font-size: 30px;
+
+    float: left;
+
+    width: 70%;
+    height: 55px;
+
+    text-align: center;
+
+    color: #00856a;
+    border: 0;
+    border-radius: 15px 0 0 15px;
+    background-color: #2c2233;
+}
+.Go-input
+{
+    font-size: 20px;
+    font-weight: bold;
+
+    float: left;
+
+    width: 20%;
+    height: 55px;
+    margin-right: 10%;
+
+    cursor: pointer;
+    text-align: center;
+
+    color: #2c2233;
+    border: 0;
+    border-radius: 0 15px 15px 0;
+    background-color: #00856a;
+}
+footer
+{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    background-color: #00856a;
+}
+.heading-footer
+{
+    font-size: 2vw;
+
+    margin: 0 auto;
+    padding: 10px;
+
+    text-align: center;
+
+    border-top: 5px groove #2c2233;
+}
+@media screen and (min-width: 850px)
+{
+    .money
+    {
+        display: table;
+    }
+}
+@media screen and (max-width: 850px)
+{
+    .box
+    {
+        width: 50%;
+    }
+    .box2
+    {
+        width: 100%;
+    }
+    .result-heading
+    {
+        font-size: 30px;
+    }
+    .money
+    {
+        font-size: 4.5vw;
+    }
+    .holds-input
+    {
+        margin: 20px 0 0 0;
+    }
+    .heading-footer {
+    	font-size: 16px;
+}
+@media screen and (max-width: 550px)
+{
+    .box
+    {
+        width: 100%;
+    }
+    .wrapper
+    {
+        top: 5%;
+    }
+}

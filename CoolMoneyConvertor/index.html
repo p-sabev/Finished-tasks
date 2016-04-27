@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Convertobog</title>
+</head>
+<body>
+<div class="wrapper clearfix">
+
+    <div class="box"><h2 class="result-heading">BG:<span id="value1" class="money"></span></h2></div>
+    <div class="box"><h2 class="result-heading">EU:<span id="value2" class="money"></span></h2></div>
+    <div class="box"><h2 class="result-heading">US:<span id="value3" class="money"></span></h2></div>
+    <div class="box"><h2 class="result-heading">GB:<span id="value4" class="money"></span></h2></div>
+
+<div class="holds-input">
+    <div class="box2">
+        <input name="BGN" type="number" maxlength="10" id="BGN" class="input" placeholder="BGN" />
+        <input id="submit" type="button" value="лв" class="Go-input" OnClick="bgngo()">
+    </div>
+    <div class="box2">
+        <input name="EURO" type="number" maxlength="10" id="EURO" class="input" placeholder="EURO" />
+        <input id="submit" type="button" value="€" class="Go-input" OnClick="eurogo()">
+    </div>
+    <div class="box2">
+        <input name="USD" type="number" maxlength="10" id="USD" class="input" placeholder="USD" />
+        <input id="submit" type="button" value="$" class="Go-input" OnClick="usdgo()">
+    </div>
+    <div class="box2">
+        <input name="GBP" type="number" maxlength="10" id="GBP" class="input" placeholder="GBP" />
+        <input id="submit" type="button" value="£" class="Go-input" OnClick="gbpgo()">
+    </div>
+</div>
+
+</div>
+<footer>
+    <h3 class="heading-footer">2016 ® Copyright Convertobog by Petar Sabev</h3>
+</footer>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
